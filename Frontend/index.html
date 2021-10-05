@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Filmes | Favoritos</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <h1 class="app-tittle">Meus Filmes Favoritos</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" onsubmit="submitForm(event)" id="form">
+            <form class="films-form">
+                <label class="label"for="name">Nome</label>
+                <input type="text" required id="name" class="inputName" placeholder="Informe o nome do filme" autofocus>
+
+                <label class="label" for="image">Imagem</label>
+                <input type="text" required id="image" class="inputUrl" placeholder="URL da Imagem" autofocus>
+
+                <label class="label" for="genre">Gênero</label>
+                <input type="text" required id="genre" class="inputGenre" placeholder="Informe o Gênero" autofocus>
+
+                <label class="label" for="rate">Nota</label>
+                <input type="text" required id="rate" class="inputRate" placeholder="Informe a Nota" autofocus>
+
+                <button class="button"type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="section-card">
+            <div id="lista">                
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
